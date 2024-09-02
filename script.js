@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
         </video>
         <h1>Designs Modernos que Transformam Cliques em Clientes</h1>
         <p>Somos uma agência digital que cria de forma imersiva e valoriza a experiência do usuário.</p>
-        <button>Chame um Especialista</button>
-    `;
+         <button onclick="window.location.href='https://wa.me/5511999999999?text=Olá%20gostaria%20de%20falar%20com%20um%20especialista'">Chame um Especialista</button>    
+         `;
 
     // Seção Stats
     const statsSection = document.getElementById('stats-section');
@@ -72,18 +72,19 @@ document.addEventListener("DOMContentLoaded", function() {
     const contactFormSection = document.getElementById('contact-form-section');
     contactFormSection.innerHTML = `
         <h2>Fale Conosco</h2>
-        <form action="#">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="sobrenome">Sobrenome</label>
-            <input type="text" id="sobrenome" name="sobrenome" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="+199 999 999 999" required>
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-            <button type="submit">Enviar Mensagem</button>
-        </form>
+<form action="mailto:agenciaclickmint@gmail.com" method="POST" enctype="text/plain">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" required>
+    <label for="sobrenome">Sobrenome</label>
+    <input type="text" id="sobrenome" name="sobrenome" required>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    <label for="telefone">Telefone</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="+199 999 999 999" required>
+    <label for="mensagem">Mensagem</label>
+    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+    <button type="submit">Enviar Mensagem</button>
+</form>
+
     `;
 });
