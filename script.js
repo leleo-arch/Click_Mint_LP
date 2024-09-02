@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         </video>
         <h1>Designs Modernos que Transformam Cliques em Clientes</h1>
         <p>Somos uma agência digital que cria de forma imersiva e valoriza a experiência do usuário.</p>
-         <button onclick="window.location.href='https://wa.me/5511999999999?text=Olá%20gostaria%20de%20falar%20com%20um%20especialista'">Chame um Especialista</button>    
+         <button onclick="window.location.href='https://w.app/UDHaTt'">Chame um Especialista</button>    
          `;
 
     // Seção Stats
