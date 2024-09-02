@@ -57,7 +57,17 @@ document.addEventListener("DOMContentLoaded", function() {
         <p>Destaque os benefícios de trabalhar com a agência, como aumento de conversão, design personalizado, experiência do usuário otimizada, etc.</p>
         <img src="/assets/Design totalmente responsivo para todos os dispositivos.png" alt="Benefícios de Trabalhar Conosco">
     `;
+    const landingPagesSection2 = document.getElementById('landing-pages-section2');
+    landingPagesSection2.innerHTML = `
+        <h2>A CLICKMINT É RESPONSÁVEL PELO CRESCIMENTO DE GRANDES NEGÓCIOS.</h2>
+        <p>Estas grandes empresas confiam na ClickMint devido aos nossos métodos desenvolvidos exclusivamente para a performance online.</p>
+        <img src="./assets/6.png" alt="Exemplo de Landing Page">
+        <img src="/assets/1.png" alt="Benefícios de Trabalhar Conosco">
+        <img src="/assets/3.png" alt="Benefícios de Trabalhar Conosco">
+       <button>Chame um Especialista</button>
 
+    `;
+ 
     // Formulário de Contato
     const contactFormSection = document.getElementById('contact-form-section');
     contactFormSection.innerHTML = `
