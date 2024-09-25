@@ -46,8 +46,10 @@ document.addEventListener("DOMContentLoaded", function() {
         <h2>Landing Pages Otimizadas</h2>
         <p>Com mais de uma década de experiência, nossa agência de marketing digital transforma estratégias em resultados, impulsionando o sucesso online dos nossos clientes.</p>
         <img src="./assets/2.png" alt="Exemplo de Landing Page">
+         <img src="/assets/conversão 2.png" alt="Benefícios de Trabalhar Conosco">
+
+        
         <img src="/assets/4.png" alt="Benefícios de Trabalhar Conosco">
-        <img src="/assets/conversão 2.png" alt="Benefícios de Trabalhar Conosco">
     `;
 
     // Seção Benefícios
