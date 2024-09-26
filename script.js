@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <h1>Designs Modernos que Transformam Cliques em Clientes</h1>
         <p>Somos uma agência digital que cria de forma imersiva e valoriza a experiência do usuário.</p>
          <button onclick="window.location.href='https://w.app/UDHaTt'">Chame um Especialista</button>    
-         `;
+    `;
 
     // Seção Stats
     const statsSection = document.getElementById('stats-section');
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <p>Projetos de Sucesso</p>
         </div>
         <div>
-            <h3>66+</</h3>
+            <h3>66+</h3>
             <p>Clientes Satisfeitos</p>
         </div>
     `;
@@ -46,9 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <h2>Landing Pages Otimizadas</h2>
         <p>Com mais de uma década de experiência, nossa agência de marketing digital transforma estratégias em resultados, impulsionando o sucesso online dos nossos clientes.</p>
         <img src="./assets/2.png" alt="Exemplo de Landing Page">
-         <img src="/assets/conversão 2.png" alt="Benefícios de Trabalhar Conosco">
-
-        
+        <img src="/assets/conversão 2.png" alt="Benefícios de Trabalhar Conosco">
         <img src="/assets/4.png" alt="Benefícios de Trabalhar Conosco">
     `;
 
@@ -59,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <p>Destaque os benefícios de trabalhar com a agência, como aumento de conversão, design personalizado, experiência do usuário otimizada, etc.</p>
         <img src="/assets/Design totalmente responsivo para todos os dispositivos.png" alt="Benefícios de Trabalhar Conosco">
     `;
+
     const landingPagesSection2 = document.getElementById('landing-pages-section2');
     landingPagesSection2.innerHTML = `
         <h2>A CLICKMINT É RESPONSÁVEL PELO CRESCIMENTO DE GRANDES NEGÓCIOS.</h2>
@@ -66,27 +65,33 @@ document.addEventListener("DOMContentLoaded", function() {
         <img src="./assets/6.png" alt="Exemplo de Landing Page">
         <img src="/assets/1.png" alt="Benefícios de Trabalhar Conosco">
         <img src="/assets/3.png" alt="Benefícios de Trabalhar Conosco">
-       <button>Chame um Especialista</button>
-
+        <button>Chame um Especialista</button>
     `;
- 
+
     // Formulário de Contato
     const contactFormSection = document.getElementById('contact-form-section');
     contactFormSection.innerHTML = `
         <h2>Fale Conosco</h2>
-<form action="mailto:agenciaclickmint@gmail.com" method="POST" enctype="text/plain">
-    <label for="nome">Nome</label>
-    <input type="text" id="nome" name="nome" required>
-    <label for="sobrenome">Sobrenome</label>
-    <input type="text" id="sobrenome" name="sobrenome" required>
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-    <label for="telefone">Telefone</label>
-    <input type="tel" id="telefone" name="telefone" placeholder="+199 999 999 999" required>
-    <label for="mensagem">Mensagem</label>
-    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-    <button type="submit">Enviar Mensagem</button>
-</form>
-
+        <form action="mailto:agenciaclickmint@gmail.com" method="POST" enctype="text/plain">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="+199 999 999 999" required>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            <button type="submit" id="contactSubmit">Enviar Mensagem</button>
+        </form>
     `;
+
+    // Adiciona o evento fbq('track', 'Contact') a todos os botões do site
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            fbq('track', 'Contact');
+        });
+    });
 });
