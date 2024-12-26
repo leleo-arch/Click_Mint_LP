@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     heroSection.innerHTML = `
         <video autoplay muted loop>
             <source src="./assets/small.mp4" type="video/mp4">
-            Seu navegador não suporta a tag de vídeo.
+            Seu navegador não suporta a tag de vídeo
         </video>
         <h1>Designs Modernos que Transformam Cliques em Clientes</h1>
         <p>Somos uma agência digital que cria de forma imersiva e valoriza a experiência do usuário.</p>
